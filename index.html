@@ -2,60 +2,39 @@
 <html>
     <head>
         <style>
-            .flexbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-end;
-}
-
-.flexbox-item {
-    width: 200px;
-    margin: 10px;
-    border: 3px solid #333;
-    background-color: #dfdfdf;
-}
-
-.flexbox-item-1 {min-height: 100px;}
-.flexbox-item-2 {min-height: 200px;}
-.flexbox-item-3 {min-height: 300px;}
-            #youtube-link {
-                width: 400px;
-
-            }
-            #discord-link {
-                width: 400px;
-
-            }
-            body {
-                background-color: gray;
-            }
-            h1 {
-                color: rgb(255, 255, 255); 
-                font-size: 40
-                px;
-            }
+        body {
+            background-color: grey;
+        }
+        #link-container {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .link {
+            border: 5px solid black;
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+        }
         </style>
     </head>
     <body>
-        <div class="flexbox-contaner">
-            <div class="flexbox-item flexbox-item-1"></div>
-            <div class="flexbox-item flexbox-item-2"></div>
-            <div class="flexbox-item flexbox-item-3"></div>
+        <div id="link-container">
+            <div class="link">
+                <a href="https://discord.gg/K5JnuC5c6s">
+                    <img src="/images/discord_logo_small.png" alt="Discord">
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.youtube.com/channel/UCgL05ZObeG-mgS2Ssi04YHw">
+                    <img src="/images/youtube_logo_icon_168737.png" alt="Youtube">
+                </a>
+            </div> 
+            <div class="link">
+                <a href="https://www.twitch.tv/pattaconaytor">
+                    <img src="/images/twitch logo.png" alt="Twitch">
+                </a>
+            </div>
         </div>
-        <script>
-            console.log("hey you yea you get outta here this is a construction zone!")
-        </script>
-        
-        <h1>
-            Taco's hub
-        </h1>
-        <a href = 'https://discord.gg/K5JnuC5c6s'>
-        <img id = 'discord-link' src="/images/discord_logo_small.png" alt="discord">
-        </a>
-        <a href= "https://www.youtube.com/channel/UCgL05ZObeG-mgS2Ssi04YHw">
-        <img src="/images/youtube logo.jpg" alt="youtube">
-        </a>  
     </body>
 </html>
