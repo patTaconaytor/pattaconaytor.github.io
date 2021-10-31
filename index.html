@@ -2,15 +2,29 @@
 <html>
     <head>
         <style>
+            .flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {min-height: 100px;}
+.flexbox-item-2 {min-height: 200px;}
+.flexbox-item-3 {min-height: 300px;}
             #youtube-link {
                 width: 400px;
-                position: relative; top: 100;
-                left: 0;
+
             }
             #discord-link {
                 width: 400px;
-                position: relative; top: 100;
-                right: 0;
+
             }
             body {
                 background-color: gray;
@@ -23,9 +37,15 @@
         </style>
     </head>
     <body>
+        <div class="flexbox-contaner">
+            <div class="flexbox-item flexbox-item-1"></div>
+            <div class="flexbox-item flexbox-item-2"></div>
+            <div class="flexbox-item flexbox-item-3"></div>
+        </div>
         <script>
             console.log("hey you yea you get outta here this is a construction zone!")
         </script>
+        
         <h1>
             Taco's hub
         </h1>
